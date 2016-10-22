@@ -27,8 +27,7 @@ TEST_CLASS(READINT_TEST) // Test suite for read_int()
 		streambuf *orig_cin = cin.rdbuf(ss.rdbuf());
 
 		// Perform the read_int() test.
-		// cin will now read from your file and not from the keyboard.
-		// We expect the correct value returned is 0, ignoring the Hello string.
+	
 		Assert::AreEqual(read_int("My prompt: ", -3, 3), 0);
 
 		// Restore cin to the way it was before
@@ -51,8 +50,7 @@ TEST_CLASS(READINT_TEST) // Test suite for read_int()
 		streambuf *orig_cin = cin.rdbuf(ss.rdbuf());
 
 		// Perform the read_int() test.
-		// cin will now read from your file and not from the keyboard.
-		// We expect the correct value returned is 0, ignoring the Hello string.
+
 		Assert::AreEqual(read_int("My prompt: ", 5, 1), 0);
 
 		// Restore cin to the way it was before
@@ -75,8 +73,7 @@ TEST_CLASS(READINT_TEST) // Test suite for read_int()
 		streambuf *orig_cin = cin.rdbuf(ss.rdbuf());
 
 		// Perform the read_int() test.
-		// cin will now read from your file and not from the keyboard.
-		// We expect the correct value returned is 0, ignoring the Hello string.
+
 		Assert::AreEqual(read_int("My prompt: ", 0, 4), 0);
 
 		// Restore cin to the way it was before
@@ -99,8 +96,7 @@ TEST_CLASS(READINT_TEST) // Test suite for read_int()
 		streambuf *orig_cin = cin.rdbuf(ss.rdbuf());
 
 		// Perform the read_int() test.
-		// cin will now read from your file and not from the keyboard.
-		// We expect the correct value returned is 0, ignoring the Hello string.
+	
 		Assert::AreEqual(read_int("My prompt: ", 0, 0), 0);
 
 		// Restore cin to the way it was before
